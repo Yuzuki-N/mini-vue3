@@ -61,7 +61,6 @@ export function track(target, key) {
     dep = new Set();
     depsMap.set(key, dep);
   }
-  // 已经在dep中了
   trackEffects(dep);
 }
 
